@@ -1,0 +1,706 @@
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #ebebeb;
+}
+a
+{
+    text-decoration: none;
+}
+@keyframes doimau
+{
+    from
+    {
+        background-color: blue;
+    }
+    to
+    {
+        background-color: red;
+    }
+}
+*                   /* Cho tất cả item */
+{
+    box-sizing: border-box;         /*  Tự canh lề cho các flex*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* header */
+.LucidaConsole
+{
+    float: left;
+    display: inline;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+/* logo */
+.titlepage a span:first-child
+{
+    color: black;
+    margin-left: 15%;
+}
+.titlepage a span:last-child
+{
+    color:dodgerblue;
+}
+.right
+{
+    direction: rtl;
+}
+.title
+{
+    width: 100%;
+    background-color: orange;
+}
+.b
+{
+    font-weight: bold;
+}
+#dangnhap
+{
+    font-size: 20px;
+    margin-right: 6%;
+    margin-top: 0;
+}
+#dangky
+{
+    clear: right;
+}
+#quenmk
+{
+   margin-left: 1%;
+   margin-right: 4%;
+}
+ /* thanh tim kiem */
+.search-box
+{
+    position: absolute;
+    top: 6%;
+    left: 47%;
+    transform: translate(-50%,-50%);
+    background-color: #2f3640;
+    height: 35px;
+    border-radius: 40px;
+    padding: 10px;
+}
+.search-icon
+{
+    color: grey;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.search-txt
+{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+}
+/* thanh menu */
+div table
+ {
+      float: right;
+ }
+ul.menu >li >a
+{
+    display: block;
+    padding: 20px;
+    color: black;
+}
+ul.menu
+{
+    background: lightblue;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav >ul.menu
+{
+    display: flex;
+}
+ul.menu >li
+{
+    max-width: 200px;
+    z-index: 200;
+}
+ul.menu >li >a:hover
+{
+    background: lightskyblue;
+    color:red;
+    transition: 0.3s;
+}
+/* sap xep */
+.subcontent
+{
+    display: none;
+    background: white !important;
+    z-index: 1;
+    border-radius: 10px;
+}
+.sub:hover .subcontent
+{
+    display: block;
+    position: absolute;
+}
+ul.subcontent >li >a:hover
+{
+    background: white !important;
+}
+/* body */
+div.item
+{
+    padding: 5px;
+    width: 15%;
+    margin: 0.8%;
+    position: relative;
+}
+/* HOT */
+div.lable
+{
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    padding: 5px;
+    color: white;
+    border-radius: 10px ;
+    animation: doimau 0.5s infinite;
+}
+div.item img
+{
+    width: 100%;
+    transition: transform 1s;
+    border-radius: 10px;
+}
+div.item div
+{
+    overflow: hidden;
+}
+div.item img:hover 
+{
+    transform: scale(1.1);
+}
+
+/* more info */
+div.more-info
+{
+    background-color: white;
+    color: black;
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: -8%;
+    bottom: 0%;
+    border-radius: 10px;
+    z-index: 99;
+    opacity: 0;
+    display: block;
+    transition: all 0.5s;
+    transform: translateX(0); 
+    text-align: left;
+    padding-left: 10%;
+}
+.item:hover  .translateright
+{
+    opacity: 1;
+    transform: translateX(100%); 
+    z-index: 100;
+}
+.item:hover  .translateleft
+{
+    opacity: 1;
+    transform: translateX(-100%);  
+    z-index: 100;
+}
+.more-info-right::after {
+    content: " ";
+    border-width: 12px;
+    border-style: solid;
+    border-color: transparent transparent transparent #ebebeb;
+    position:absolute;
+    top: 10%;
+    left: 0%;
+}
+.more-info-left::after {
+    content: " ";
+    border-width: 12px;
+    border-style: solid;
+    border-color: transparent #ebebeb transparent transparent;
+    position:absolute;
+    top: 10%;
+    right: 0%;
+}
+.more-info h1
+{
+    color: #f18121;
+    margin-bottom: 0;
+}
+.more-info h3
+{
+    font-size: 95%;
+    color: gray;
+    margin-bottom: 0;
+    margin-top: 3%;
+}
+.more-info h4
+{
+    font-size: 90%;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+.more-info-theloai a
+{
+    background-color: lightskyblue;
+    padding: 10%;
+    margin-right: 7px;
+    border-radius: 10px;
+    color: white;
+    font-size: 90%;
+}
+.more-info-theloai a:hover
+{
+    color: #f18121;
+    transition: 0.5s;
+}
+/* sắp xếp các truyện */
+div.items
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Tự tính khoảng cách các ô trên dòng */
+.titlebody
+{
+    color:mediumslateblue;
+   font-size: 120%;
+}
+.titlebody:hover
+{
+    color: red;
+    transition: all 0.3s;
+}
+.item
+{
+    text-align: center;
+}
+.titlestory
+{
+    color: black;
+}
+.titlestory:hover
+{
+    color: red;
+    transition: 0.5s;
+}
+a.xemthem
+{
+    margin-left: 40%;
+    background-color: #f18121;
+    font-size: 150%;
+    padding:10px 20px;
+    border-radius:5px;
+    color: white;
+}
+
+.xemthem:hover{
+    background-color: lightsalmon;
+    transition: 0.3s;
+}
+div#foot
+{
+   
+    background-color: white !important;
+    position: relative;
+    bottom: 0;
+}
+div.foottext
+{
+    font-size: 105%;
+    display: inline-block;
+    margin: 0.5%;
+    margin-left: 2%;
+}
+div.footimg
+{
+    position:absolute;
+    float: right;
+   right: 10%;
+    top: 25%;
+}
+
+div.reset
+{
+    clear: left;
+   padding: 1.5%;
+}
+div.reset a
+{
+    color: black !important;
+    font-size: 110%;
+    margin-left: 5%;
+}
+#theloai-index
+{
+    display: none;
+}
+.bodytheloai
+{
+    background-color: white;
+}
+.bodytheloai h1
+{
+    padding-top: 10px;
+    margin-top: 0;
+    font-size: 150%;
+}
+div.theloai
+{
+    width: 48%;
+    margin: 0.1%;
+    background-color: white;
+}
+.theloai:hover #theloai-index
+{
+    display: block;
+}
+div.theloai img
+{
+     margin-top: -50%;
+    margin-left: 155%;
+    width: 50%;
+}
+ul.theloaimenu
+{
+    list-style-type: none;
+}
+div.colum-theloaimenu
+{
+    float: left;
+}
+.theloaimenu h2
+{
+    font-size: 100%;
+}
+.theloaimenu h2 a
+{
+    color: black;
+}
+.theloaimenu h2 a:hover
+{
+    color: red;
+    transition: 0.4s;
+}
+ul.theloaimenu p
+{
+    color: darkgrey;
+    font-size: 130%;
+    padding:5px 10px;
+    border-radius:5px;
+}
+ul.theloaimenu a p
+{
+    color: black;
+    padding:5px 10px;
+    border-radius:5px;
+}
+ul.theloaimenu a p:hover
+{
+    color: white;
+    background-color: #f18121;
+    padding:5px 10px;
+    border-radius:5px;
+    transition: 0.5s;
+}
+.row
+{
+    float: left; 
+    display: block;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+nav ul.theloaimenu li.row:first-child
+{
+    margin-left: 35%;
+}
+.row a
+{
+    color: black;
+    font-size: 120%;
+    padding:7px 13px;
+    border-radius: 20px;
+}
+.row a:hover
+{
+    background-color:green;
+    padding:7px 13px;
+    border-radius: 20px;
+    transition: 0.3s;
+    color: white;
+}
+a.page-now
+{
+    background-color:green;
+    padding:7px 13px;
+    border-radius: 20px;
+    color: white;
+}
+div.bodyoneanime img
+{
+    float: left;
+    margin-right: 2%;
+}
+div.bodyoneanime
+{
+    margin: 2%;
+}
+
+div.bodyoneanime p.link-theloai-oneanime a
+{
+    font-size: 125%;
+    color: #f18121;
+    border: #f18121 solid 1px;
+    padding: 5%;
+    border-radius: 10px;
+}
+.link-theloai-oneanime
+{
+    display: inline-block;
+    margin-right: 1%;
+    margin-bottom: 0;
+}
+div.bodyoneanime p.link-theloai-oneanime a:hover
+{
+    color: white;
+    background-color: #f18121;
+    transition: 0.5s;
+}
+div.button-oneanime p
+{
+    display: inline-block;
+    padding: 0.8%;
+    border-radius: 10px;
+    margin-right: 3%;
+    font-size: 110%;
+}
+div.button-oneanime a:first-child
+{
+    margin-left: 0%;
+}
+#doctudau
+{
+    background-color: #8bc34a;
+}
+div.button-oneanime a
+{
+    color: white;
+}
+#doctudau:hover
+{
+    background-color:lightgreen;
+    transition: 0.5s;
+}
+#theodoi
+{
+    background-color: #ff2853;
+}
+#theodoi:hover
+{
+    background-color:lightsalmon;
+    transition: 0.5s;
+}
+#thich
+{
+    background-color: #bd10e0;;
+}
+#thich:hover
+{
+    background-color:violet;
+    transition: 0.5s;
+}
+#doctiep
+{
+    background-color: #209cee;
+}
+#doctiep:hover
+{
+    background-color:skyblue;
+    transition: 0.5s;
+}
+.titlebodyoneanime
+{
+    font-size: 170%;
+    color: #f18121;
+}
+.fontsize
+{
+    font-size: 110%;
+}
+ul.dschuong li
+{
+    list-style-type: none;
+    font-size: 100%;
+    padding: 0.7%;
+}
+div > ul.dschuong
+{
+    display: flex;
+    background-color:white ;
+    margin: 0;
+    border: gray dotted 1px;
+}
+ul.dschuong li:last-child
+{
+    margin-left: 80%;
+}
+div.dschuongs
+{
+    height: 700px;
+    width: 80%;
+    overflow: auto;
+    margin-left: 10%;
+    border-radius: 10px;
+}
+a.xemthemofdschuong
+{
+    margin-left: 45% !important;
+    font-size: 120%;
+    color: white;
+    background-color: #f18121;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+a.xemthemofdschuong:hover
+{
+    background-color: lightsalmon;
+    transition: 0.3s;
+}
+
+/* go to top */
+#bttop
+{
+    position: fixed;
+    right: 1%;
+    bottom: 3%;
+    background-color: #f18121;
+    color: white;
+    border: none;
+    width: 4%;
+    height: 5.5%;
+    border-radius: 20px;
+    z-index: 999;
+}
+#bttop i
+{
+    font-size: 200%;
+    text-align: center;
+    margin-left:33% ;
+    margin-top:5% ;
+}
+#bttop:hover
+{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+/* Comment */
+div.comment p:not(:first-child)
+{
+    font-size: 130%;
+}
+div.comment-input
+{
+    position: relative;
+}
+div.comment-input textarea
+{
+    width: 100%;
+    height: 150px;
+    font-size: 130%;
+}
+#button-comment
+{
+    position: absolute;
+    right: 4%;
+    top: 30%;
+    color: #f18121;
+    font-size: 30px;
+}
+/* Căn giữa cho body */
+.mid-body
+{
+    width: 80%;
+    margin:  auto;
+}
+
+/* mobile */
+#mobile-header
+{
+    display: none;
+}
+.mobile-overlay
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.2s;
+    z-index: 99;
+}
+#mobile-menu
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 60%;
+    max-width: 100%;
+    background-color: white;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all linear 0.2s;
+    z-index: 999;
+}
+.mobile-menu-list
+{
+    margin-top: 24px;
+}
+.mobile-menu-list li a
+{
+    color: black;
+    font-size: 120%;
+}
+.mobile-menu-list li
+{
+    padding:8px 0 ;
+}
+.mobile-close
+{
+    font-size: 150%;
+    position: absolute;
+    top: 8px;
+    right: 15px;
+}
+@keyframes fadeIn 
+{
+    from
+    {
+        opacity: 0;
+    }    
+    to
+    {
+        opacity: 1;
+    }
+}
+div.mobile-header-truyenhot
+{
+    display: none;
+}

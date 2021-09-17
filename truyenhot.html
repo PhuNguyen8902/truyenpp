@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tuyển tập truyện tranh hay</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link href="hinhanh/favicon.ico " rel="shortcut icon" />
+        <link rel="stylesheet" href="css/bai1css.css" >
+        <link rel="stylesheet" href="css/mobile.css"  media="screen and (max-width: 560px)">
+        <link rel="stylesheet" href="css/mobile-1024.css"  media="screen and (min-width: 561px) and (max-width: 1024px)">
+        <script src="https://kit.fontawesome.com/360b724a8d.js" crossorigin="anonymous"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/js.js"></script>
+    </head>
+    <body>
+        <div class="title titlepage">
+            <h1 class="LucidaConsole"><a href="index.html">
+                <span> Truyen</span><span>PP</span>
+            </a></h1>
+            <p class="right b" id="dangnhap">Đăng nhập</p>
+            <form class="right">
+                <table>
+                     <tr>
+                    <td>Tài khoản:</td>
+                    <td>
+                    <input type="text" name="username" />
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>Mật khẩu:</td>
+                    <td>
+                    <input type="password" name="password" />
+                    </td>
+                    </tr>
+                </table>
+            </form>
+            <div class="right" id="dangky">
+                <a href="#"> Đăng ký</a>
+                <span class="right" id="quenmk">
+                <a href="#"> Quên mật khẩu</a>
+                </span>
+            </div>
+         </div>
+
+         <div class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Hãy nhập truyện đi nào~~">
+            <a class="search-icon" href="#">
+                <i class="fas fa-search"></i>
+            </a>
+         </div>
+     
+         <nav>
+             <ul class="menu">
+                 <li><a href="index.html"><i class="fas fa-home"></i> Trang chủ</a></li>
+                 <li class="theloai"><a href="theloai.html" > Thể loại <i class="fas fa-angle-up"></i></a></li>
+                <li><a href="#"> Con Gái</a></li>
+                <li><a href="#"> Con Trai</a></li>
+                <li><a href="#"> Lịch sử</a></li>
+                <li><a href="#">Theo dõi</a></li>
+                <li><a href="#"><i class="far fa-comment"></i> Thảo luận</a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i> Fanpage</a></li>
+            </ul>
+         </nav>
+
+         <div id="mobile-header">
+            <label for="mobile-input"><i class="fas fa-bars" id="mobile-bars"></i></label>
+            <a href="#"> Đăng nhập</a>
+            <a href="#"> Đăng ký</a>
+        </div>
+        <input type="checkbox" hidden name="" class="input" id="mobile-input">
+        <label for="mobile-input" class="mobile-overlay"></label>
+
+        
+     <nav id="mobile-menu">
+        <label for="mobile-input"class="mobile-close"> <i class="fas fa-times"></i></label>
+        <ul class="mobile-menu-list">
+            <li>
+                <div class="mobile-search-box">
+                    <input class="mobile-search-txt" type="text" name="" placeholder="Hãy nhập truyện đi nào~~">
+                 </div>
+                </li>
+            <li><a href="index.html"><i class="fas fa-home"></i> Trang chủ</a></li>
+            <li><a href="truyenhot.html"> Top lượt xem</a></li>
+            <li><a href="#"> Mới cập nhật</a></li>
+            <li><a href="#"> Truyện mới</a></li>
+            <li><a href="#"> Truyện full</a></li>
+           <li><a href="theloai.html" > Thể loại </a></li>
+           <li><a href="#"> Lịch sử</a></li>
+           <li><a href="#">Theo dõi</a></li>
+           <li><a href="#"><i class="far fa-comment"></i> Thảo luận</a></li>
+           <li><a href="#"><i class="fab fa-facebook-f"></i> Fanpage</a></li>
+       </ul>
+    </nav>
+
+        <section class="mid-body">
+         <h1 id="topluotxem"><a href="truyenhot.html" class="titlebody"><i class="fab fa-hotjar"></i>Truyện hot</a></h1>
+         <div class="items bodytheloai">
+            <nav>
+                <div class="colum-theloaimenu">
+                <ul class="theloaimenu">
+                   <li><p>Tình trạng</p></li>
+                   <li><p>Quốc gia</p></li>  
+                </ul>
+                </div>
+                <div class="colum-theloaimenu">
+                    <ul class="theloaimenu">
+                       <li><a href="#"><p>Đang tiến hành</p></a></li>
+                       <li><a href="#"><p>Trung Quốc</p></a></li>  
+                    </ul>
+                    </div>
+                    <div class="colum-theloaimenu">
+                        <ul class="theloaimenu">
+                           <li><a href="#"><p>Hoàn thành</p></a></li>
+                           <li><a href="#"><p>Việt Nam</p></a></li>  
+                        </ul>
+                        </div>
+                        <div class="colum-theloaimenu">
+                            <ul class="theloaimenu">
+                                <li><p class="not">&ensp;</p></li>
+                               <li><a href="#"><p>Hàn Quốc</p></a></li>  
+                            </ul>
+                            </div>
+                            <div class="colum-theloaimenu">
+                                <ul class="theloaimenu">
+                                    <li><p class="not">&ensp;</p></li>
+                                   <li><a href="#"><p>Nhật Bản</p></a></li>  
+                                </ul>
+                                </div>
+                                <div class="colum-theloaimenu">
+                                    <ul class="theloaimenu">
+                                       <li><p class="not">&ensp;</p></li>
+                                       <li><a href="#"><p>Mỹ</p></a></li>  
+                                    </ul>
+                                    </div>
+                   <div class="mobile-header-truyenhot">
+                       <h3>Tình trạng</h3>
+                    
+                          <p><a href="#"> Đang tiến hành</a></p>
+                          <p><a href="#"> Hoàn thành</a></p>
+                        
+                         <h3>Quốc gia</h3>
+                        
+                           <p><a href="#"> Trung Quốc</a></p>
+                             <p><a href="#"> Việt Nam </a></p>
+                            <p><a href="#"> Hàn Quốc</a></p>
+                             <p><a href="#"> Nhật Bản</a></p>
+                             <p><a href="#"> Mỹ</a></p>
+                          
+                     </div>
+             </nav>
+        </div>
+
+
+        <section>
+            <div class="items">
+
+                 <!-- One Piece -->
+                 <div  class="item " title="One Piece">
+                    <a href="onepiece.html">
+                            <div>
+                               <img src="hinhanh/onepiece.jpg" alt="onepiece" />
+                            </div>
+                           <div class="titlestory">
+                               <h3 >One piece</h3>
+                               <p> Chương 1021</p>
+                           </div>
+                   </a>
+                   <div class="lable">  HOT </div>
+                   <div class="more-info translateright more-info-right">
+                           <h1>One piece</h1>
+                           <h3 >Tên Khác: Vua Hải Tặc; One Piece; OnePiece</h3>
+                           <h4 >Tác giả: Eiichiro Oda</h4>
+                           <h4 >Tình trạng: Đang Cập Nhật</h4>
+                        <div class="more-info-theloai">
+                               <p class="link-theloai-oneanime"><a href="#">Action </a></p>
+                               <p class="link-theloai-oneanime"><a href="#">Adventure </a></p>
+                               <p class="link-theloai-oneanime"><a href="#">Comedy </a></p>
+                               <p class="link-theloai-oneanime"><a href="#">Drama </a></p>
+                               <p class="link-theloai-oneanime"><a href="#">Fantasy </a></p>
+                               <p class="link-theloai-oneanime"><a href="#">Shounen </a></p>
+                               <p class="link-theloai-oneanime"><a href="#">Supernatural </a></p>
+                       </div>
+                       <div>
+                               <h4 >One Piece là câu truyện kể về Luffy và các thuyền viên của mình. Khi... </h4>
+                       </div>
+                   </div>
+                </div>
+
+
+                 <!-- Kimetsu No Yaiba -->
+                 <div  class="item" title="Kimetsu No Yaiba">
+                    <a href="#">
+                        <div>
+                            <img src="hinhanh/kimetsu-no-yaiba.jpg" alt="kimetsu-no-yaiba" />
+                            </div>
+                        <div class="titlestory">
+                            <h3>Kimetsu No Yaiba</h3>
+                            <p> Chương 205</p>
+                        </div>
+                   </a>
+                   <div class="lable">  HOT </div>
+                   <div class="more-info translateright more-info-right">
+                            <h1>Kimetsu No Yaiba</h1>
+                            <h3>Tên Khác: Thanh gươm diệt quỷ</h3>
+                            <h4>Tác giả: Gotouge Koyoharu</h4>
+                            <h4 >Tình trạng: Đang Cập Nhật</h4>
+                        <div class="more-info-theloai">
+                                <p class="link-theloai-oneanime"><a href="#">Drama </a></p>
+                                <p class="link-theloai-oneanime"><a href="#">Fantasy </a></p>
+                                <p class="link-theloai-oneanime"><a href="#">Shounen </a></p>
+                                <p class="link-theloai-oneanime"><a href="#">Romance </a></p>
+                                <p class="link-theloai-oneanime"><a href="#">Historical </a></p>
+                        </div>
+                        <div>
+                                <h4 >Kimetsu no Yaiba – Tanjirou là con cả của gia đình vừa mất cha. Một ngày nọ, Tanjirou đến thăm thị trấn khác để...</h4>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Black Clover -->
+                 <div  class="item" title="Black Clover">
+                    <a href="#">
+                        <div>
+                            <img src="hinhanh/black-clover.jpg" alt="black-clover" />
+                        </div>
+                        <div class="titlestory">
+                            <h3>Black Clover</h3>
+                            <p> Chương 302</p>
+                        </div>
+                   </a>
+                   <div class="lable">  HOT </div>
+                   <div class="more-info translateright more-info-right">
+                            <h1>Black Clover</h1>
+                            <h3>Tên Khác: Pháp sư không phép thuật;Black Five Leaf Grass</h3>
+                            <h4 >Tình trạng: Đang cập nhật</h4>
+                        <div class="more-info-theloai">
+                            <p class="link-theloai-oneanime"><a href="#">Action </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Fantasy </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Shounen </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Supernatural </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Manhua </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Mystery </a></p>
+                        </div>
+                        <div>
+                            <h4 >Tỉnh lại sau giấc ngủ, thế giới đại biến. Quen thuộc cao trung truyền thụ chính là phép thuật, nói cho mọi người muốn trở thành một tên xuất sắc...</h4>
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- Bỗng Một Ngày Trở Thành Con Gái Nhà Vua -->
+               <div  class="item" title="Bỗng Một Ngày Trở Thành Con Gái Nhà Vua">
+                   <a href="#">
+                        <div>
+                            <img src="hinhanh/bong-mot-ngay-tro-thanh-con-gai-nha-vua.jpg" alt="bong-mot-ngay-tro-thanh-con-gai-nha-vua" />
+                        </div>
+                        <div class="titlestory">
+                            <h3>Bỗng Một Ngày Trở Thành Con Gái Nhà Vua</h3>
+                            <p> Chương 345</p>
+                        </div>
+                  </a>
+                  <div class="lable">  HOT </div>
+                  <div class="more-info translateright more-info-right">
+                            <h1>Bỗng Một Ngày Trở Thành Con Gái Nhà Vua</h1>
+                            <h3>Tên Khác: Một Ngày Nọ Tôi Bỗng Trở Thành Con Gái Của Vua</h3>
+                            <h4 >Tình trạng: Đang cập nhật</h4>
+                        <div class="more-info-theloai">
+                            <p class="link-theloai-oneanime"><a href="#">Drama</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Manhua </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Romance</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">TruyệnMàu</a></p>
+                        </div>
+                        <div>
+                            <h4 >Một tai nạn xe hơi cho phép cô vượt qua thế giới phép thuật, và cô được hoàng đế nhận làm công chúa trong một cuộc thi. Tuy nhiên, các công chúa...</h4>
+                        </div>
+                    </div>
+               </div>
+
+               <!-- Onepunch Man -->
+               <div  class="item" title="Onepunch Man">
+                    <a href="#">
+                        <div>
+                            <img src="hinhanh/onepunch-man.jpg" alt="onepunch-man" />
+                        </div>
+                        <div class="titlestory">
+                            <h3>Onepunch Man</h3>
+                            <p> Chương 196.6</p>
+                        </div>
+                    </a>
+                    <div class="lable">  HOT </div>
+                    <div class="more-info translateright more-info-right">
+                            <h1>Onepunch Man</h1>
+                            <h3 >Tên khác: Anh Hùng Onepunch; One Punch Man; Onepunch-Man; Đấm Phát Chết Luôn</h3>
+                            <h4>Tác giả: Murata Yuusuke, One </h4>
+                            <h4 >Tình trạng: Đang Cập Nhật</h4>
+                        <div class="more-info-theloai">
+                            <p class="link-theloai-oneanime"><a href="#">Action </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Adventure </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Comedy </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Shounen </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Supernatural </a></p>
+                        </div>
+                        <div>
+                            <h4 >Onepunch-Man là một Manga thể loại siêu... </h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  Ánh Sáng Cuối Con Đường-->
+               <div  class="item" title="Ánh Sáng Cuối Con Đường">
+                   <a href="#">
+                        <div>
+                            <img src="hinhanh/the-beginning-after-the-end.jpg" alt="the-beginning-after-the-end" />
+                        </div>
+                        <div class="titlestory">
+                            <h3>Ánh Sáng Cuối Con Đường</h3>
+                            <p> Chương 116</p>
+                        </div>
+                  </a>
+                  <div class="lable">  HOT </div>
+                  <div class="more-info translateleft more-info-left">
+                            <h1>Ánh Sáng Cuối Con Đường</h1>
+                            <h3 >Tên Khác: The Beginning After The End</h3>
+                            <h4 >Tình trạng: Đang Cập Nhật</h4>
+                        <div class="more-info-theloai">
+                            <p class="link-theloai-oneanime"><a href="#">Action </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Adventure </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Comedy </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Webtoon </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Isekai </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">TruyệnMàu</a></p>
+                        </div>
+                        <div>
+                            <h4 >King Grey là người sở hữu tất cả trong một thế giới bị Võ thuật chi phối. Nhưng đi đôi với một sức mạnh to lớn lại là sự cô độc không hồi kết...</h4>
+                        </div>
+                    </div>
+               </div>
+
+               <!-- Please Don't Bully Me - Nagatoro-San -->
+               <div  class="item" title="Please Don't Bully Me - Nagatoro-San">
+                   <a href="#">
+                        <div>
+                            <img src="hinhanh/please-dont-bully-me-nagatoro-san.jpg" alt="please-dont-bully-me-nagatoro-san" />
+                        </div>
+                        <div class="titlestory">
+                            <h3>Please Don't Bully Me - Nagatoro-San</h3>
+                            <p> Chương 83</p>
+                        </div>
+                  </a>
+                  <div class="lable">  HOT </div>
+                  <div class="more-info translateright more-info-right">
+                            <h1>Please Don't Bully Me - Nagatoro-San</h1>
+                            <h4 >Tình trạng: Đang Cập Nhật</h4>
+                        <div class="more-info-theloai">
+                            <p class="link-theloai-oneanime"><a href="#">Comedy</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Romance</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">SchoolLife</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">SliceOfLife</a></p>
+                        </div>
+                        <div>
+                            <h4 >Nagatoro là một nữ sinh năm nhất có một sở thích là "Bắt nạt" senpai của mình. Một cuộc tình bất ngờ chuẩn bị bắt đầu.</h4>
+                        </div>
+                    </div>
+               </div>
+
+                 <!-- Toàn Chức Pháp Sư -->
+                 <div  class="item" title="Toàn Chức Pháp Sư">
+                    <a href="#">
+                        <div>
+                            <img src="hinhanh/toan-chuc-phap-su.jpg" alt="toan-chuc-phap-su" />
+                        </div>
+                        <div class="titlestory">
+                            <h3>Toàn Chức Pháp Sư</h3>
+                            <p> Chương 737</p>
+                        </div>
+                   </a>
+                   <div class="lable">  HOT </div>
+                   <div class="more-info translateright more-info-right">
+                            <h1>Toàn Chức Pháp Sư</h1>
+                            <h4 >Tình trạng: Đang cập nhật</h4>
+                        <div class="more-info-theloai">
+                            <p class="link-theloai-oneanime"><a href="#">Action </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Fantasy </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Shounen </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Supernatural </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Manhua </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Mystery </a></p>
+                        </div>
+                        <div>
+                            <h4 >Tỉnh lại sau giấc ngủ, thế giới đại biến. Quen thuộc cao trung truyền thụ chính là phép thuật, nói cho mọi người muốn trở thành một tên xuất sắc...</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bách Luyện Thành Thần -->
+               <div  class="item" title="Bách Luyện Thành Thần">
+                   <a href="#">
+                        <div>
+                            <img src="hinhanh/bach-luyen-thanh-than.jpg" alt="bach-luyen-thanh-than" />
+                        </div>
+                        <div class="titlestory">
+                            <h3>Bách Luyện Thành Thần</h3>
+                            <p> Chương 792</p>
+                        </div>
+                  </a>
+                  <div class="lable">  HOT </div>
+                  <div class="more-info translateright more-info-right">
+                            <h1>Bách Luyện Thành Thần</h1>
+                            <h3>Tên Khác: Hành Trình Tu Tiên</h3>
+                            <h4 >Tình trạng: Đang cập nhật</h4>
+                        <div class="more-info-theloai">
+                            <p class="link-theloai-oneanime"><a href="#">Action </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Drama </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Fantasy </a></p>
+                        </div>
+                        <div>
+                            <h4 >Cảnh giới: Luyện nhục cảnh, Luyện cốt cảnh, Luyện tạng cảnh.... La Chính vì gái mà bị đày làm nô bộc. La Bái Nhiên tham vọng đầy mình...</h4>
+                        </div>
+                    </div>
+               </div>
+
+               <!-- Manh Sư Tại Thượng -->
+               <div  class="item" title="Manh Sư Tại Thượng">
+                   <a href="#">
+                        <div>
+                            <img src="hinhanh/manh-su-tai-thuong.jpg" alt="manh-su-tai-thuong" />
+                        </div>
+                        <div class="titlestory">
+                            <h3>Manh Sư Tại Thượng</h3>
+                            <p> Chương 305</p>
+                        </div>
+                  </a>
+                  <div class="lable">  HOT </div>
+                  <div class="more-info translateright more-info-right">
+                            <h1>Manh Sư Tại Thượng</h1>
+                            <h4 >Tình trạng: Đang cập nhật</h4>
+                        <div class="more-info-theloai">
+                            <p class="link-theloai-oneanime"><a href="#">Manhua</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Romance</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Shoujo</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">NgônTình</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">TruyệnMàu</a></p>
+                        </div>
+                    </div>
+               </div>
+
+               <!-- Lúc Đó, Tôi Đã Chuyển Sinh Thành Slime -->
+               <div  class="item" title="Lúc Đó, Tôi Đã Chuyển Sinh Thành Slime">
+                   <a href="#">
+                        <div>
+                            <img src="hinhanh/tensei-shitara-slime-datta-ken.jpg" alt="tensei-shitara-slime-datta-ken" />
+                        </div>
+                        <div class="titlestory">
+                            <h3>Lúc Đó, Tôi Đã Chuyển Sinh Thành Slime</h3>
+                            <p> Chương 86</p>
+                        </div>
+                  </a>
+                  <div class="lable">  HOT </div>
+                  <div class="more-info translateright more-info-right">
+                            <h1>Lúc Đó, Tôi Đã Chuyển Sinh Thành Slime</h1>
+                            <h3>Tác giả: Kawakami Taiki, Fuse</h3>
+                            <h4 >Tình trạng: Đang cập nhật</h4>
+                        <div class="more-info-theloai">
+                            <p class="link-theloai-oneanime"><a href="#">Adventure</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Comedy</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Fantasy</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Shounen</a></p>
+                        </div>
+                        <div>
+                            <h4>Một manga khác chuyển thể từ light novel đang hot ở nhật. Một anh chàng bị tên cướp đâm chết khi đang gặp vợ chưa cưới của đồng...</h4>
+                        </div>
+                    </div>
+               </div>
+
+               <!--Thất Hình Đại Tội  -->
+               <div  class="item" title="Thất Hình Đại Tội">
+                    <a href="#">
+                        <div>
+                            <img src="hinhanh/nanatsu-no-taizai.jpg" alt="nanatsu-no-taizai" />
+                        </div>
+                        <div class="titlestory">
+                            <h3>Thất Hình Đại Tội</h3>
+                            <p> Chương 346</p>
+                        </div>
+                    </a>
+                    <div class="lable">  HOT </div>
+                    <div class="more-info translateleft more-info-left">
+                            <h1>Thất Hình Đại Tội</h1>
+                            <h4>Tác giả: Suzuki Nakaba </h4>
+                            <h4 >Tình trạng: Hoàn thành</h4>
+                        <div class="more-info-theloai">
+                            <p class="link-theloai-oneanime"><a href="#">Action </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Adventure </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Comedy </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Fantasy </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Shounen </a></p>
+                        </div>
+                        <div>
+                            <h4 >“Thất đại ác nhân”, một nhóm chiến binh có tham vọng lật đổ vương quốc Britannia, được cho là đã bị tiêu diệt bởi các “hiệp sĩ thánh chiến” mặc... </h4>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Hồi Sinh Thế Giới -->
+                <div  class="item" title="Hồi Sinh Thế Giới">
+                    <a href="#">
+                        <div>
+                            <img src="hinhanh/dr-stone.jpg" alt="dr-stone" />
+                        </div>
+                        <div class="titlestory">
+                            <h3>Hồi Sinh Thế Giới</h3>
+                            <p> Chương 204</p>
+                        </div>
+                   </a>
+                   <div class="lable">  HOT </div>
+                   <div class="more-info translateright more-info-right">
+                            <h1>Hồi Sinh Thế Giới</h1>
+                            <h3>Tên Khác: Dr. Stone;Dr Stone;Dr.Stone</h3>
+                            <h4 >Tình trạng: Đang cập nhật</h4>
+                        <div class="more-info-theloai">
+                            <p class="link-theloai-oneanime"><a href="#">Action</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Adventure</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Shounen</a></p>
+                        </div>
+                        <div>
+                            <h4>Sau 1 trận đại dịch không rõ nguồn gốc khiến loài người trên toàn thể địa cầu biến thành đá trải qua mấy ngàn năm sau 2 thanh niên...</h4>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Đại Chiến Titan -->
+                 <div  class="item" title="Đại Chiến Titan">
+                    <a href="#">
+                        <div>
+                            <img src="hinhanh/attack-on-titan.jpg" alt="attack-on-titan" />
+                        </div>
+                        <div class="titlestory">
+                            <h3>Đại Chiến Titan</h3>
+                            <p> Chương 140</p>
+                        </div>
+                   </a>
+                   <div class="lable">  HOT </div>
+                   <div class="more-info translateright more-info-right">
+                            <h1>Đại Chiến Titan</h1>
+                            <h3 >Tên Khác: Attack On Titan; Shingeki no Kyojin; Tấn Công Người Khổng Lồ</h3>
+                            <h4>Tác giả: Hajime Isayama</h4>
+                            <h4 >Tình trạng: Đang cập nhật</h4>
+                        <div class="more-info-theloai">
+                            <p class="link-theloai-oneanime"><a href="#">Action </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Shounen </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Mystery </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Horror </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Historical </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Tragedy </a></p>
+                        </div>
+                        <div>
+                            <h4 >Hơn 100 năm trước, giống người khổng lồ Titan đã tấn công và đẩy loài người tới bờ... </h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thăng Cấp Trở Lại -->
+               <div  class="item"  title="Thăng Cấp Trở Lại">
+                   <a href="#">
+                        <div>
+                            <img src="hinhanh/vua-thang-cap.jpg" alt="vua-thang-cap" />
+                        </div>
+                        <div class="titlestory">
+                            <h3>Thăng Cấp Trở Lại</h3>
+                            <p> Chương 94</p>
+                        </div>
+                  </a>
+                  <div class="lable">  HOT </div>
+                  <div class="more-info translateright more-info-right">
+                            <h1>Thăng Cấp Trở Lại</h1>
+                            <h3 >Tên Khác: Vua Thăng Cấp</h3>
+                            <h4>Tác giả: Hajime Isayama</h4>
+                            <h4 >Tình trạng: Đang cập nhật</h4>
+                        <div class="more-info-theloai">
+                            <p class="link-theloai-oneanime"><a href="#">Action </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Adventure </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Fantasy</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Manhwa</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Webtoon</a></p>
+                        </div>
+                        <div>
+                            <h4 >Yeonwoo có một người anh em sinh đôi đã biến mất năm năm trước . Một ngày nọ , một chiếc đồng hồ do em trai anh để lại . Bên trong , anh...</h4>
+                        </div>
+                    </div>
+               </div>
+
+                <!-- Võ Luyện Đỉnh Phong -->
+                <div  class="item" title="Võ Luyện Đỉnh Phong">
+                    <a href="#">
+                        <div>
+                            <img src="hinhanh/vo-luyen-dinh-phong.jpg" alt="vo-luyen-dinh-phong" />
+                        </div>
+                        <div class="titlestory">
+                            <h3>Võ Luyện Đỉnh Phong</h3>
+                            <p> Chương 1404</p>
+                        </div>
+                    </a>
+                    <div class="lable">  HOT </div>
+                    <div class="more-info translateright more-info-right">
+                            <h1>Võ Luyện Đỉnh Phong</h1>
+                            <h4 >Tình trạng: Hoàn thành</h4>
+                        <div class="more-info-theloai">
+                            <p class="link-theloai-oneanime"><a href="#">Action</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Fantasy</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Shounen </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Supernatural </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Manhua</a></p>
+                        </div>
+                        <div>
+                            <h4>Võ đạo đỉnh phong, là cô độc, là tịch mịch, là dài đằng đẵng cầu tác, là cao xử bất thắng hàn
+
+                                Phát triển trong nghịch cảnh, cầu sinh nơi tuyệt...</h4>
+                        </div>
+                    </div>
+                </div>
+
+               <!-- Trên Người Ta Có Một Con Rồng -->
+               <div  class="item" title="Trên Người Ta Có Một Con Rồng">
+                     <a href="#">
+                        <div>
+                            <img src="hinhanh/tren-nguoi-ta-co-mot-con-rong.jpg" alt="tren-nguoi-ta-co-mot-con-rong" />
+                        </div>
+                        <div class="titlestory">
+                            <h3>Trên Người Ta Có Một Con Rồng</h3>
+                            <p> Chương 392</p>
+                        </div>
+                    </a>
+                    <div class="lable">  HOT </div>
+                    <div class="more-info translateright more-info-right">
+                            <h1>Trên Người Ta Có Một Con Rồng</h1>
+                            <h4 >Tình trạng: Hoàn thành</h4>
+                        <div class="more-info-theloai">
+                            <p class="link-theloai-oneanime"><a href="#">Action</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Comedy</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Manhua </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">TruyệnMàu</a></p>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- Boku No Hero Academia -->
+            <div  class="item" title="Boku No Hero Academia">
+                <a href="#">
+                    <div>
+                        <img src="hinhanh/boku-no-hero-academia.jpg" alt="boku-no-hero-academia" />
+                    </div>
+                    <div class="titlestory">
+                        <h3>Boku No Hero Academia</h3>
+                        <p> Chương 319</p>
+                    </div>
+                </a>
+                <div class="lable">  HOT </div>
+                <div class="more-info translateleft more-info-left">
+                        <h1>Boku No Hero Academia</h1>
+                        <h3 >Tên Khác: My hero Academia;Học Viện Anh Hùng;Trường Học Siêu Anh Hùng</h3>
+                        <h4 >Tình trạng: Đang cập nhật</h4>
+                    <div class="more-info-theloai">
+                        <p class="link-theloai-oneanime"><a href="#">Action </a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Adventure </a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Comedy </a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Shounen </a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Supernatural </a></p>
+                    </div>
+                    <div>
+                        <h4 >Vào tương lai, lúc mà con người với những sức mạnh siêu nhiên là điều thường thấy quanh...  </h4>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Chào Mừng Cậu Đến Trường Iruma-Kun -->
+               <div  class="item" title="Chào Mừng Cậu Đến Trường Iruma-Kun">
+                   <a href="#">
+                        <div>
+                            <img src="hinhanh/mairimashita-iruma-kun.jpg" alt="mairimashita-iruma-kun" />
+                        </div>
+                        <div class="titlestory">
+                            <h3>Chào Mừng Cậu Đến Trường Iruma-Kun</h3>
+                            <p> Chương 215</p>
+                        </div>
+                  </a>
+                  <div class="lable">  HOT </div>
+                  <div class="more-info translateright more-info-right">
+                            <h1>Chào Mừng Cậu Đến Trường Iruma-Kun</h1>
+                            <h3 >Tên Khác: Mairimashita! Iruma-Kun</h3>
+                            <h4 >Tình trạng: Đang cập nhật</h4>
+                        <div class="more-info-theloai">
+                            <p class="link-theloai-oneanime"><a href="#">Comedy</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Drama</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Fantasy</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Shounen</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Supernatural </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">SchoolLife</a></p>
+                        </div>
+                        <div>
+                            <h4 >Mairimashita! Iruma-kun là câu chuyện kể về cậu bé Suzuki Iruma, người đã bị bố mẹ mình kí khế ước bán cho ác ma để đổi lấy tiền tài...</h4>
+                        </div>
+                    </div>
+               </div>
+
+               <!--Trọng Sinh Đô Thị Tu Tiên"  -->
+               <div  class="item" title="Trọng Sinh Đô Thị Tu Tiên">
+                    <a href="#">
+                        <div>
+                            <img src="hinhanh/trong-sinh-do-thi-tu-tien.jpg" alt="trong-sinh-do-thi-tu-tien" />
+                        </div>
+                        <div class="titlestory">
+                            <h3>Trọng Sinh Đô Thị Tu Tiên</h3>
+                            <p> Chương 632</p>
+                        </div>
+                    </a>
+                    <div class="lable">  HOT </div>
+                    <div class="more-info translateright more-info-right">
+                            <h1>Trọng Sinh Đô Thị Tu Tiên</h1>
+                            <h4 >Tình trạng: Đang cập nhật</h4>
+                        <div class="more-info-theloai">
+                            <p class="link-theloai-oneanime"><a href="#">Action</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Adventure</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Fantasy</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Manhua</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">MartialArts</a></p>
+                        </div>
+                        <div>
+                            <h4 >Truyện Trọng Sinh Đô Thị Tu Tiên được chuyển thể từ tiểu thuyết cùng tên của tác giả Thập Lý Kiếm Thần Bắc Huyền Tiên Tôn Trần...</h4>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Nguyên Tôn -->
+               <div  class="item" title="Nguyên Tôn">
+                   <a href="#">
+                        <div>
+                            <img src="hinhanh/nguyen-ton.jpg" alt="nguyen-ton" />
+                        </div>
+                        <div class="titlestory">
+                            <h3>Nguyên Tôn</h3>
+                            <p> Chương 338.5</p>
+                        </div>
+                  </a>
+                  <div class="lable">  HOT </div>
+                  <div class="more-info translateright more-info-right">
+                            <h1>Nguyên Tôn</h1>
+                            <h4>Tác giả: Thiên Tằm Thổ Đậu</h4>
+                            <h4 >Tình trạng: Đang cập nhật</h4>
+                        <div class="more-info-theloai">
+                            <p class="link-theloai-oneanime"><a href="#">Action</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Adventure</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Fantasy</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Manhua</a></p>
+                        </div>
+                    </div>
+               </div>
+
+                <!-- Fairy Tail 100 Year Quest -->
+                <div  class="item"  title="Fairy Tail 100 Year Quest">
+                    <a href="#">
+                        <div>
+                            <img src="hinhanh/fairy-tail-100-year-quest.jpg" alt="fairy-tail-100-year-quest" />
+                        </div>
+                        <div class="titlestory">
+                            <h3>Fairy Tail 100 Year Quest</h3>
+                            <p> Chương 87</p>
+                        </div>
+                    </a>
+                    <div class="lable">  HOT </div>
+                    <div class="more-info translateright more-info-right">
+                            <h1>Fairy Tail 100 Year Quest</h1>
+                            <h3 >Tên khác: Hội Pháp Sư Nhiệm Vụ Trăm Năm; Fairy Tail 100 Years Quest</h3>
+                            <h4 >Tình trạng: Đang Cập Nhật</h4>
+                        <div class="more-info-theloai">
+                                <p class="link-theloai-oneanime"><a href="#">Action </a></p>
+                                <p class="link-theloai-oneanime"><a href="#">Adventure </a></p>
+                                <p class="link-theloai-oneanime"><a href="#">Comedy </a></p>
+                                <p class="link-theloai-oneanime"><a href="#">Fantasy </a></p>
+                                <p class="link-theloai-oneanime"><a href="#">Ecchi </a></p>
+                        </div>
+                        <div>
+                                <h4 >Tuyện tiếp nối chap 545 của Fairy Tail, khi nhóm Natsu đi làm nhiệm vụ trăm năm. </h4>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <!-- Jujutsu Kaisen - Chú Thuật Hồi Chiến -->
+                <div  class="item" title="Jujutsu Kaisen - Chú Thuật Hồi Chiến">
+                    <a href="#">
+                        <div>
+                            <img src="hinhanh/jujutsu-kaisen.jpg" alt="jujutsu-kaisen" />
+                        </div>
+                        <div class="titlestory">
+                            <h3>Jujutsu Kaisen - Chú Thuật Hồi Chiến</h3>
+                            <p> Chương 154</p>
+                        </div>
+                    </a>
+                    <div class="lable">  HOT </div>
+                    <div class="more-info translateright more-info-right">
+                            <h1>Jujutsu Kaisen - Chú Thuật Hồi Chiến</h1>
+                            <h3>Tên Khác: Chú Thuật Hồi Chiến</h3>
+                            <h4>Tác giả: Akutami Gege</h4>
+                            <h4 >Tình trạng: Đang Cập Nhật</h4>
+                        <div class="more-info-theloai">
+                            <p class="link-theloai-oneanime"><a href="#">Action </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Fantasy </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Shounen </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Supernatural </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Demons </a></p>
+                        </div>
+                        <div>
+                            <h4 >Yuuji Itadori là một thiên tài có tốc độ và sức mạnh, nhưng cậu ấy muốn dành thời gian ... </h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Tối Cường Phản Sáo Lộ Hệ Thống  -->
+               <div  class="item" title="Tối Cường Phản Sáo Lộ Hệ Thống">
+                    <a href="#">
+                        <div>
+                            <img src="hinhanh/toi-cuong-phan-sao-lo-he-thong.jpg" alt="toi-cuong-phan-sao-lo-he-thong" />
+                        </div>
+                        <div class="titlestory">
+                            <h3>Tối Cường Phản Sáo Lộ Hệ Thống</h3>
+                            <p> Chương 447</p>
+                        </div>
+                    </a>
+                    <div class="lable">  HOT </div>
+                    <div class="more-info translateleft more-info-left">
+                            <h1>Tối Cường Phản Sáo Lộ Hệ Thống</h1>
+                            <h4 >Tình trạng: Đang Cập Nhật</h4>
+                        <div class="more-info-theloai">
+                            <p class="link-theloai-oneanime"><a href="#">Action </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Adventure </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Shounen</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Manhua</a></p>
+                        </div>
+                        <div>
+                            <h4 >"Người trẻ tuổi, năm đó ta bắt đầu Trang Bức thời điểm, các ngươi còn chỉ là một giọt chất lỏng!" "Tiên tử, theo tại hạ đi một chuyến, bảo đảm...</h4>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- Anh Hùng ? Ta Không Làm Lâu Rồi -->
+            <div  class="item" title="Anh Hùng ? Ta Không Làm Lâu Rồi">
+                    <a href="#">
+                        <div>
+                            <img src="hinhanh/anh-hung-ta-khong-lam-lau-roi.jpg" alt="anh-hung-ta-khong-lam-lau-roi" />
+                        </div>
+                        <div class="titlestory">
+                            <h3>Anh Hùng ? Ta Không Làm Lâu Rồi</h3>
+                            <p> Chương 310</p>
+                        </div>
+                    </a>
+               <div class="lable">  HOT </div>
+               <div class="more-info translateright more-info-right">
+                        <h1>Anh Hùng ? Ta Không Làm Lâu Rồi</h1>
+                        <h4 >Tình trạng: Đang Cập Nhật</h4>
+                    <div class="more-info-theloai">
+                        <p class="link-theloai-oneanime"><a href="#">Adventure </a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Fantasy </a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Manhua</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Mystery</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">MartialArts</a></p>
+                    </div>
+                    <div>
+                        <h4 >Zero là là vị Siêu Anh hùng đầu tiên của toàn nhân loại. Sau hắn, lần lượt xuất hiện nhiều siêu anh hùng khác, nhưng hắn chỉ làm siêu...</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Đại Vương Tha Mạng -->
+            <div  class="item"  title="Đại Vương Tha Mạng">
+                <a href="#">
+                    <div>
+                        <img src="hinhanh/dai-vuong-tha-mang.jpg" alt="dai-vuong-tha-mang" />
+                    </div>
+                    <div class="titlestory">
+                        <h3>Đại Vương Tha Mạng</h3>
+                        <p> Chương 284</p>
+                    </div>
+                </a>
+                    <div class="lable">  HOT </div>
+                    <div class="more-info translateright more-info-right">
+                            <h1>Đại Vương Tha Mạng</h1>
+                            <h3>Tên Khác: đại vương tha mạng</h3>
+                            <h4>Tác giả: Duyệt Động Văn Hóa</h4>
+                            <h4 >Tình trạng: Đang Cập Nhật</h4>
+                        <div class="more-info-theloai">
+                            <p class="link-theloai-oneanime"><a href="#">Comedy</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Supernatural</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Manhua</a></p>
+                        </div>
+                        <div>
+                            <h4 >Sau khi linh khí hồi phục, mọi người chắt chiu từng tơ linh khí, chỉ có Lữ Thụ, dựa vào hệ thống điểm cảm xúc tiêu cực , oán hận người khác là trở...</h4>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- Trọng Sinh Khí Thiếu Quy Lai" -->
+            <div  class="item" title="Trọng Sinh Khí Thiếu Quy Lai">
+                <a href="#">
+                    <div>
+                        <img src="hinhanh/trong-sinh-khi-thieu-quy-lai.jpg" alt="trong-sinh-khi-thieu-quy-lai" />
+                    </div>
+                    <div class="titlestory">
+                        <h3>Trọng Sinh Khí Thiếu Quy Lai</h3>
+                        <p> Chương 221</p>
+                    </div>
+               </a>
+               <div class="lable">  HOT </div>
+               <div class="more-info translateright more-info-right">
+                        <h1>Trọng Sinh Khí Thiếu Quy Lai</h1>
+                        <h4 >Tình trạng: Đang Cập Nhật</h4>
+                    <div class="more-info-theloai">
+                        <p class="link-theloai-oneanime"><a href="#">Action</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Fantasy</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Manhua</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">TruyệnMàu</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trọng Sinh Sau Tám Vạn Năm" -->
+            <div  class="item" title="Trọng Sinh Sau Tám Vạn Năm">
+                 <a href="#">
+                     <div>
+                        <img src="hinhanh/trong-sinh-sau-tam-van-nam.jpg" alt="trong-sinh-sau-tam-van-nam" />
+                    </div>
+                    <div class="titlestory">
+                        <h3>Trọng Sinh Sau Tám Vạn Năm</h3>
+                        <p> Chương 233</p>
+                    </div>
+                </a>
+                    <div class="lable">  HOT </div>
+                    <div class="more-info translateright more-info-right">
+                            <h1>Trọng Sinh Sau Tám Vạn Năm</h1>
+                            <h4 >Tình trạng: Đang Cập Nhật</h4>
+                        <div class="more-info-theloai">
+                            <p class="link-theloai-oneanime"><a href="#">Action</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Fantasy</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Manhua</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">TruyệnMàu</a></p>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- Thần Võ Thiên Tôn -->
+            <div  class="item" title="Thần Võ Thiên Tôn">
+                <a href="#">
+                    <div>
+                        <img src="hinhanh/than-vo-thien-ton.jpg" alt="than-vo-thien-ton" />
+                    </div>
+                    <div class="titlestory">
+                        <h3>Thần Võ Thiên Tôn</h3>
+                        <p> Chương 362</p>
+                    </div>
+                </a>
+                <div class="lable">  HOT </div>
+                <div class="more-info translateright more-info-right">
+                        <h1>Thần Võ Thiên Tôn</h1>
+                        <h4 >Tình trạng: Đang Cập Nhật</h4>
+                    <div class="more-info-theloai">
+                        <p class="link-theloai-oneanime"><a href="#">Action</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Adventure</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Manhua</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Mystery</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">XuyênKhông</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">TruyệnMàu</a></p>
+                    </div>
+                    <div>
+                        <h4>Hái hoa Phi Diệp, có thể trảm nhật nguyệt sơn hà; Vừa nghĩ, bên trên hái cửu thiên tinh thần, hạ trấn lục đạo Hoàng Tuyền; Lật tay chưởng...</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sự Trở Lại Của Pháp Sư Vĩ Đại Sau 4000 Năm -->
+            <div  class="item"  title="Sự Trở Lại Của Pháp Sư Vĩ Đại Sau 4000 Năm">
+                <a href="#">
+                    <div>
+                        <img src="hinhanh/su-tro-lai-cua-phap-su-vi-dai-sau-4000-nam.jpg" alt="su-tro-lai-cua-phap-su-vi-dai-sau-4000-nam" />
+                    </div>
+                    <div class="titlestory">
+                        <h3>Sự Trở Lại Của Pháp Sư Vĩ Đại Sau 4000 Năm</h3>
+                        <p> Chương 91</p>
+                    </div>
+                </a>
+                <div class="lable">  HOT </div>
+                <div class="more-info translateleft more-info-left">
+                        <h1>Sự Trở Lại Của Pháp Sư Vĩ Đại Sau 4000 Năm</h1>
+                        <h4 >Tình trạng: Đang Cập Nhật</h4>
+                    <div class="more-info-theloai">
+                        <p class="link-theloai-oneanime"><a href="#">Comedy</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Manhua</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Manhwa</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">TruyệnMàu</a></p>
+                    </div>
+                    <div>
+                        <h4>Đại phù thủy Lucas Traumen - người mạnh nhất thế giới. Trong một lần đi tiêu diệt quái vật đã khiến thần nổi giận và phạm tội khinh thường...</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dị Tộc Trùng Sinh -->
+            <div  class="item" title="Dị Tộc Trùng Sinh">
+                <a href="#">
+                    <div>
+                        <img src="hinhanh/di-toc-trung-sinh.jpg" alt="di-toc-trung-sinh" />
+                    </div>
+                    <div class="titlestory">
+                        <h3>Dị Tộc Trùng Sinh</h3>
+                        <p> Chương 205</p>
+                    </div>
+                </a>
+                <div class="lable">  HOT </div>
+                <div class="more-info translateright more-info-right">
+                        <h1>Dị Tộc Trùng Sinh</h1>
+                        <h3>Tên Khác: Dị Hoàng Trùng Sinh</h3>
+                        <h4 >Tình trạng: Đang Cập Nhật</h4>
+                    <div class="more-info-theloai">
+                        <p class="link-theloai-oneanime"><a href="#">Action</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Manhua</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">MartialArts</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">TruyệnMàu</a></p>
+                    </div>
+                    <div>
+                        <h4>Năm 2023, linh khí thức tỉnh, mọi ngóc ngách trên thế giới đều bị bao bọc bởi linh khí nồng đậm, các sinh vật cũng không tránh khỏi bị...</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vạn Cổ Thần Vương -->
+            <div  class="item" title="Vạn Cổ Thần Vương">
+                <a href="#">
+                    <div>
+                        <img src="hinhanh/van-co-than-vuong.jpg" alt="van-co-than-vuong" />
+                    </div>
+                    <div class="titlestory">
+                        <h3>Vạn Cổ Thần Vương</h3>
+                        <p> Chương 270</p>
+                    </div>
+                </a>
+                <div class="lable">  HOT </div>
+                <div class="more-info translateright more-info-right">
+                        <h1>Vạn Cổ Thần Vương</h1>
+                        <h3>Tên Khác: Dị Hoàng Trùng Sinh</h3>
+                        <h4 >Tình trạng: Đang Cập Nhật</h4>
+                    <div class="more-info-theloai">
+                        <p class="link-theloai-oneanime"><a href="#">Action</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Adventure</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Manhua</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Mystery</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">XuyênKhông</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">TruyệnMàu</a></p>
+                    </div>
+                    <div>
+                        <h4>Kiếp trước bởi vì Đế Tôn hãm hại mà bỏ mình, trùng sinh đến thời trung học, đúng lúc gặp linh khí khôi phục, thiên địa biến đổi lớn. Tái sinh...</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mashle: Magic And Muscles -->
+            <div  class="item" title="Mashle: Magic And Muscles">
+                <a href="#">
+                    <div>
+                         <img src="hinhanh/mashle-magic-and-muscles.jpg" alt="mashle-magic-and-muscles" />
+                    </div>
+                    <div class="titlestory">
+                        <h3>Mashle: Magic And Muscles</h3>
+                        <p> Chương 73</p>
+                    </div>
+                </a>
+                <div class="lable">  HOT </div>
+                <div class="more-info translateright more-info-right">
+                        <h1>Mashle: Magic And Muscles</h1>
+                        <h3>Tên Khác: Mashle: Phép Thuật và Cơ Bắp</h3>
+                        <h4>Tác giả: Hajime Komoto</h4>
+                        <h4 >Tình trạng: Đang Cập Nhật</h4>
+                    <div class="more-info-theloai">
+                        <p class="link-theloai-oneanime"><a href="#">Action</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Comedy</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Shounen</a></p>
+                    </div>
+                    <div>
+                        <h4>Ngày xửa ngày xưa, có một thế giới nơi phép thuật có thể chi phối mọi thứ. Nhưng sâu trong rừng có một thanh niên dành thời gian ...</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spy X Family -->
+            <div  class="item"  title="Spy X Family">
+                <a href="#">
+                    <div>
+                        <img src="hinhanh/spy-x-family.jpg" alt="spy-x-family" />
+                    </div>
+                    <div class="titlestory">
+                        <h3>Spy X Family</h3>
+                        <p> Chương 51</p>
+                    </div>
+                </a>
+                <div class="lable">  HOT </div>
+                <div class="more-info translateright more-info-right">
+                        <h1>Spy X Family</h1>
+                        <h3>Tên Khác: Gia Đình Điệp Viên</h3>
+                        <h4>Tác giả: Endou Tatsuya</h4>
+                        <h4 >Tình trạng: Đang Cập Nhật</h4>
+                    <div class="more-info-theloai">
+                        <p class="link-theloai-oneanime"><a href="#">Action</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Adventure</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Comedy</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Shounen</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Romance</a></p>
+                    </div>
+                    <div>
+                        <h4>Anh điệp viên lấy vợ sát thủ và có con siêu năng</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kịch Trường Của Takemichi -->
+            <div  class="item" title="Kịch Trường Của Takemichi">
+                <a href="#">
+                    <div>
+                        <img src="hinhanh/tokyorevengers.jpg" alt="tokyorevengers" />
+                    </div>
+                    <div class="titlestory">
+                        <h3>Kịch Trường Của Takemichi</h3>
+                        <p> Chương 217</p>
+                    </div>
+               </a>
+               <div class="lable">  HOT </div>
+               <div class="more-info translateright more-info-right">
+                        <h1>Kịch Trường Của Takemichi</h1>
+                        <h4 >Tình trạng: Đang Cập Nhật</h4>
+                    <div class="more-info-theloai">
+                            <p class="link-theloai-oneanime"><a href="#">Action </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Drama </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Shounen </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Romance </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">SchoolLife </a></p>
+                    </div>
+                    <div>
+                            <h4 >Takemichi, thanh niên thất nghiệp còn trinh, được biết rằng người con gái đầu tiên và cũng là duy nhất cho đến bây giờ mà anh hẹn hò từ... </h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fff-Class Trashero -->
+            <div  class="item" title="Fff-Class Trashero">
+                <a href="#">
+                    <div>
+                        <img src="hinhanh/fff-class-trashero.jpg" alt="fff-class-trashero" />
+                    </div>
+                    <div class="titlestory">
+                        <h3>Fff-Class Trashero</h3>
+                        <p> Chương 92</p>
+                    </div>
+                </a>
+                <div class="lable">  HOT </div>
+                <div class="more-info translateleft more-info-left">
+                        <h1>Fff-Class Trashero</h1>
+                        <h4 >Tình trạng: Đang Cập Nhật</h4>
+                    <div class="more-info-theloai">
+                            <p class="link-theloai-oneanime"><a href="#">Action </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Adventure </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Comedy</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Fantasy</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Shounen</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Manhwa</a></p>
+                    </div>
+                    <div>
+                            <h4 >Nhân vật chính Kang Han Soo đã giết quỷ vương sau 10 năm được triệu hồi đến thế giới Fantasy. Và giờ là lúc để cậu được gửi trở lại trái đất...</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tu Tiên Giả Đại Chiến Siêu Năng Lực -->
+            <div  class="item" title="Tu Tiên Giả Đại Chiến Siêu Năng Lực">
+                <a href="#">
+                    <div>
+                        <img src="hinhanh/tu-tien-gia-dai-chien-sieu-nang-luc.jpg" alt="tu-tien-gia-dai-chien-sieu-nang-luc" />
+                    </div>
+                    <div class="titlestory">
+                        <h3>Tu Tiên Giả Đại Chiến Siêu Năng Lực</h3>
+                        <p> Chương 110</p>
+                    </div>
+                </a>
+                <div class="lable">  HOT </div>
+                <div class="more-info translateright more-info-right">
+                        <h1>Tu Tiên Giả Đại Chiến Siêu Năng Lực</h1>
+                        <h4 >Tình trạng: Đang Cập Nhật</h4>
+                    <div class="more-info-theloai">
+                            <p class="link-theloai-oneanime"><a href="#">Action </a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Manhua</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">Mystery</a></p>
+                            <p class="link-theloai-oneanime"><a href="#">TruyệnMàu</a></p>
+                    </div>
+                </div>
+            </div>
+
+             <!-- "Nghịch Thiên Tà Thần -->
+             <div  class="item" title="Nghịch Thiên Tà Thần">
+                <a href="#">
+                    <div>
+                        <img src="hinhanh/nghich-thien-ta-than.jpg" alt="nghich-thien-ta-than" />
+                    </div>
+                    <div class="titlestory">
+                        <h3>Nghịch Thiên Tà Thần</h3>
+                        <p> Chương 386</p>
+                    </div>
+                </a>
+                <div class="lable">  HOT </div>
+                <div class="more-info translateright more-info-right">
+                        <h1>Nghịch Thiên Tà Thần</h1>
+                        <h4 >Tình trạng: Đang cập nhật</h4>
+                    <div class="more-info-theloai">
+                        <p class="link-theloai-oneanime"><a href="#">Action </a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Adventure </a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Shounen </a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Supernatural </a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Manhua </a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Mystery </a></p>
+                    </div>
+                    <div>
+                        <h4 >Nhất đại thiên tài huyền mạch bị hao tổn trở thành phế vật, gia tộc vứt bỏ, thế nhân chế giễu, thậm chí đêm tân hôn bị người độc hại...... Huyền...</h4>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Đấu La Đại Lục -->
+            <div  class="item" title="Đấu La Đại Lục">
+                <a href="#">
+                    <div>
+                        <img src="hinhanh/dau-la-dai-luc.jpg" alt="dau-la-dai-luc" />
+                    </div>
+                    <div class="titlestory">
+                        <h3>Đấu La Đại Lục</h3>
+                        <p> Chương 297</p>
+                    </div>
+                </a>
+                <div class="lable">  HOT </div>
+                <div class="more-info translateright more-info-right">
+                        <h1>Đấu La Đại Lục</h1>
+                        <h3>Tên Khác: Tuyệt Thế Đường Môn 1</h3>
+                        <h4>Tác giả: Đường Gia Tam Thiếu</h4>
+                        <h4 >Tình trạng: Đang cập nhật</h4>
+                    <div class="more-info-theloai">
+                        <p class="link-theloai-oneanime"><a href="#">Action </a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Comedy</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Fantasy</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Supernatural </a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Manhua </a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Romance</a></p>
+                    </div>
+                    <div>
+                        <h4 >Đấu La Thế Giới, một đại lục rộng lớn, cư dân đông đúc. Chức nghiệp cao quý nhất tại Đấu La Đại Lục được gọi là Hồn Sư. Mỗi người sinh...</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Promised Neverland -->
+            <div  class="item" title="The Promised Neverland">
+                <a href="#">
+                    <div>
+                        <img src="hinhanh/the-promised-neverland.jpg" alt="the-promised-neverland" />
+                    </div>
+                    <div class="titlestory">
+                        <h3>The Promised Neverland</h3>
+                        <p> Chương 1815</p>
+                    </div>
+                </a>
+                <div class="lable">  HOT </div>
+                <div class="more-info translateright more-info-right">
+                        <h1>The Promised Neverland</h1>
+                        <h3>Tên Khác: Miền Đất Hứa; Yakusoku no Neverland; Tận Cùng Của Sự Giả Dối</h3>
+                        <h4>Tác giả: Kaiu Shirai, Posuka Demizu</h4>
+                        <h4 >Tình trạng: Hoàn thành</h4>
+                    <div class="more-info-theloai">
+                        <p class="link-theloai-oneanime"><a href="#">Drama</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Shounen</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Supernatural </a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Mystery</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Psychological</a></p>
+                    </div>
+                    <div>
+                        <h4 >Emma và những người bạn sống một cuộc sống bình yên tại trại trẻ...</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chung Cực Đấu La -->
+            <div  class="item" title="Chung Cực Đấu La">
+                <a href="#">
+                    <div>
+                            <img src="hinhanh/chung-cuc-dau-la.jpg" alt="chung-cuc-dau-la" />
+                    </div>
+                    <div class="titlestory">
+                            <h3>Chung Cực Đấu La</h3>
+                            <p> Chương 260</p>
+                    </div>
+                </a>
+                <div class="lable">  HOT </div>
+                <div class="more-info translateright more-info-right">
+                        <h1>Chung Cực Đấu La</h1>
+                        <h3>Tên Khác: Đấu La Đại Lục 4</h3>
+                        <h4>Tác giả: Đường Gia Tam Thiếu</h4>
+                        <h4 >Tình trạng: Đang cập nhật</h4>
+                    <div class="more-info-theloai">
+                        <p class="link-theloai-oneanime"><a href="#">Action</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Adventure</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Fantasy </a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Supernatural</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Mystery</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">MartialArts</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">TruyệnMàu</a></p>
+                    </div>
+                    <div>
+                        <h4 >Câu chuyện này là phần 4 nối tiếp với chuỗi câu chuyện trong tác phẩm Đấu La Đại Lục của...</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thế Giới Game Thủ -->
+            <div  class="item" title="Thế Giới Game Thủ">
+                <a href="#">
+                    <div>
+                        <img src="hinhanh/the-gamer.jpg" alt="the-gamer" />
+                    </div>
+                    <div class="titlestory">
+                        <h3>Thế Giới Game Thủ</h3>
+                        <p> Chương 366</p>
+                    </div>
+                </a>
+                <div class="lable">  HOT </div>
+                <div class="more-info translateleft more-info-left">
+                        <h1>Thế Giới Game Thủ</h1>
+                        <h3>Tên Khác: The Gamer</h3>
+                        <h4>Tác giả: Sang-Ah, Sung San-Young</h4>
+                        <h4 >Tình trạng: Đang cập nhật</h4>
+                    <div class="more-info-theloai">
+                        <p class="link-theloai-oneanime"><a href="#">Action</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Adventure</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Comedy</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Fantasy</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Supernatural</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">SchoolLife</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">MartialArts</a></p>
+                        <p class="link-theloai-oneanime"><a href="#">Manhwa</a></p>
+                    </div>
+                    <div>
+                        <h4 >Han Jee-Han, nhân vật chính của The Gamer, vốn dĩ chỉ là một cậu học sinh trung học bình thường như bao ...</h4>
+                    </div>
+                </div>
+            </div>
+                <!-- ---------------- -->
+            </div>
+        </section>
+
+                <nav>
+                    <ul class="theloaimenu">
+                        <li class="row"><a href="#" class="page-now"> 1 </a> </li>
+                        <li class="row"><a href="#"> 2 </a> </li>
+                        <li class="row"><a href="#"> 3 </a> </li>
+                        <li class="row"><a href="#"> 4 </a> </li>
+                        <li class="row"><a href="#"> 5 </a> </li>
+                        <li class="row"><a href="#"> <i class="fas fa-angle-right"></i> </a> </li>
+                        <li class="row"><a href="#"> <i class="fas fa-angle-right"></i> <i class="fas fa-angle-right"></i> </a> </li>
+                    </ul>
+                </nav>
+
+                 <!-- go to top -->
+            <div>
+                <a href="javascript:;" id="bttop" >
+                 <i class="fas fa-angle-up"></i>
+                </a>
+             </div>
+
+        <div class="reset">
+            <a href="index.html">Truyen Tranh</a>
+            <a href="index.html">Truyện Tranh</a>
+            <a href="index.html">Truyen Tranh</a>
+            <a href="index.html">Truyện tranh online</a>
+            <a href="index.html">Doc truyen tranh</a>
+            <a href="index.html">Đọc truyện tranh</a>
+            <a href="index.html">Manhua</a>
+            <a href="index.html">Manga</a>
+        </div>
+
+        </section>
+         <div>
+            <div id="foot">
+                <div class="titlepage" id="title-foot">
+                    <h1 class="LucidaConsole"><a href="index.html">
+                        <span> Truyen</span><span>PP</span>
+                    </a></h1>
+                </div>
+                <div class="foottext">
+                <p>
+                    Copyright © 2021 - All Rights Reserved. Quảng cáo:
+                    <br> <a href="#">ad.truyenpp@gmail.com</a>
+                </p>
+                <div class="footimg">
+                    <a href="#">
+                        <span class="appstore"> <img src="hinhanh/app-store.png" alt="app-store"></span>
+                     </a>
+                     <a href="#">
+                        <span class="googleplay"> <img src="hinhanh/google-play.png" alt="google-play"></span>
+                     </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
