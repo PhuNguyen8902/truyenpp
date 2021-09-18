@@ -229,7 +229,7 @@
     #bttop
     {
         right: 3%;
-        bottom: 12%;
+        bottom: 20%;
         width: 13%;
         height: 5.5%;
     }
@@ -280,17 +280,13 @@
     {
         display: none;
     }
-    div.foot-onechap p:first-child
+    div.flex1-foot-onechap a:first-child
     {
-        margin-left: 5%;
+        margin-left: 10%;
     }
     #baoloi
     {
-        margin-left: 2px;
-    }
-    #move-chap-foot-left
-    {
-        margin-left: 2px;
+        margin-left: 0;
     }
     .select-episode
     {
@@ -303,8 +299,37 @@
     }
     #theodoi-onechap-foot
     {
-       margin-left: 5px;
        font-size: 110%;
+    }
+    .flex1-foot-onechap
+    {
+        width: 25%;
+    }
+    .flex2-foot-onechap
+    {
+        width: 67%;
+    }
+    .flex3-foot-onechap
+    {
+        width: 8%;
+    }
+    #move-chap-foot-left
+    {
+        margin-left: 0%;
+    }
+    .select-episode
+    {
+        padding: 8px;
+        font-size: 70%;
+    }
+    .mobile-delete
+    {
+        display: none;
+    }
+    .flex-head-onechap
+    {
+        display: flex;
+        flex-wrap: wrap;
     }
     /* ----------------- */
 

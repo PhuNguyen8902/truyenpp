@@ -17,28 +17,10 @@
             <h1 class="LucidaConsole"><a href="index.html">
                 <span> Truyen</span><span>PP</span>
             </a></h1>
-            <p class="right b" id="dangnhap">Đăng nhập</p>
-            <form class="right">
-                <table>
-                     <tr>
-                    <td>Tài khoản:</td>
-                    <td>
-                    <input type="text" name="username" />
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>Mật khẩu:</td>
-                    <td>
-                    <input type="password" name="password" />
-                    </td>
-                    </tr>
-                </table>
-            </form>
-            <div class="right" id="dangky">
-                <a href="#"> Đăng ký</a>
-                <span class="right" id="quenmk">
-                <a href="#"> Quên mật khẩu</a>
-                </span>
+             <!-- login -->
+             <div class="right">
+                <a id="dangnhap" href="#"> Đăng nhập</a>
+                <a id="dangky" href="#"> Đăng ký</a>
             </div>
          </div>
 
@@ -182,7 +164,7 @@
             <li><a href="#"> Mới cập nhật</a></li>
             <li><a href="#"> Truyện mới</a></li>
             <li><a href="#"> Truyện full</a></li>
-           <li><a href="theloai.html" > Thể loại </a></li>
+           <li><a href="#" > Thể loại </a></li>
            <li><a href="#"> Lịch sử</a></li>
            <li><a href="#">Theo dõi</a></li>
            <li><a href="#"><i class="far fa-comment"></i> Thảo luận</a></li>
@@ -207,9 +189,11 @@
                 <p><i class="fas fa-exclamation-circle"></i>  Sử dụng mũi tên trái (←) hoặc phải (→) để chuyển chapter</p>                
             </div>
             <br>
-            <a class="movechap chaptruoc" href="#" ><i class="fas fa-arrow-left"></i> Chap trước</a>
-            &nbsp;
-            <a class="movechap" href="#" >Chap sau <i class="fas fa-arrow-right"></i></a>
+            <span class="flex-head-onechap">
+                <a class="movechap chaptruoc" href="#" ><i class="fas fa-arrow-left"></i> Chap trước</a>
+                &nbsp;
+                <a class="movechap" href="#" >Chap sau <i class="fas fa-arrow-right"></i></a>
+            </span>
             <br><br>
         </div>  
         <div id="viewer">
@@ -238,15 +222,15 @@
             <br>
             <img src="chap-op-img/img-00012.jpg">
             <br>
-            <img class="big-img" src="chap-op-img/img-00013.jpg">
+            <img src="chap-op-img/img-00013.jpg">
             <br>
-            <img class="big-img" src="chap-op-img/img-00014.jpg">
+            <img src="chap-op-img/img-00014.jpg">
             <br>
             <img src="chap-op-img/img-00015.jpg">
             <br>
             <img src="chap-op-img/img-00016.jpg">
             <br>
-            <img class="big-img" src="chap-op-img/img-00017.jpg">
+            <img src="chap-op-img/img-00017.jpg">
             <br>
             <img src="chap-op-img/img-00018.jpg">
             <br>
@@ -280,40 +264,46 @@
 
         <div class="foot-onechap">
             <p>     
-                <a href="index.html"><i class="fas fa-home"></i>&nbsp;<span class="pc-text-foot">Trang chủ</span></a>&nbsp;
-                <a  href="#" id="baoloi" ><i class="fas fa-exclamation-circle"></i>&nbsp;<span class="pc-text-foot"> Báo lỗi</span></a>
-                <a href="#" id="move-chap-foot-left" class="move-chap-foot"><i class="fas fa-arrow-left"></i></a>
-                &emsp;
-                <select class="select-episode">
-                    <option value="#">Chương 1021</option>
-                    <option value="#">Chương 1020</option>
-                    <option value="#">Chương 1019</option>
-                    <option value="#">Chương 1018</option>
-                    <option value="#">Chương 1017</option>
-                    <option value="#">Chương 1016</option>
-                    <option value="#">Chương 1015</option>
-                    <option value="#">Chương 1014</option>
-                    <option value="#">Chương 1013</option>
-                    <option value="#">Chương 1012</option>
-                    <option value="#">Chương 1011</option>
-                    <option value="#">Chương 1010</option>
-                    <option value="#">Chương 1009</option>
-                    <option value="#">Chương 1008</option>
-                    <option value="#">Chương 1007</option>
-                    <option value="#">Chương 1006</option>
-                    <option value="#">Chương 1005</option>
-                    <option value="#">Chương 1004</option>
-                    <option value="#">Chương 1003</option>
-                    <option value="#">Chương 1002</option>
-                    <option value="#">Chương 1001</option>
-                    <option value="#">Chương 1000</option>
-                    <option value="#">Chương 999</option>
-                    <option value="#">Chương 998</option>
-                    <option value="#">Chương 997</option>
-                </select>
-                &emsp;
-                <a href="#" class="move-chap-foot"><i class="fas fa-arrow-right"></i></a>
-                <a href="#" id="theodoi-onechap-foot"> <i class="far fa-heart"></i> &nbsp;<span class="pc-text-foot">Theo dõi</span></a>
+                <div class="flex1-foot-onechap">
+                    <a href="index.html"><i class="fas fa-home"></i>&nbsp;<span class="pc-text-foot">Trang chủ</span></a>&nbsp;
+                    <a  href="#" id="baoloi" ><i class="fas fa-exclamation-circle"></i>&nbsp;<span class="pc-text-foot"> Báo lỗi</span></a>
+                </div>
+                <div class="flex2-foot-onechap">
+                    <a href="#" id="move-chap-foot-left" class="move-chap-foot"><i class="fas fa-arrow-left"></i></a>
+                    <span class="mobile-delete">&emsp;</span>
+                    <select class="select-episode">
+                        <option value="#">Chương 1021</option>
+                        <option value="#">Chương 1020</option>
+                        <option value="#">Chương 1019</option>
+                        <option value="#">Chương 1018</option>
+                        <option value="#">Chương 1017</option>
+                        <option value="#">Chương 1016</option>
+                        <option value="#">Chương 1015</option>
+                        <option value="#">Chương 1014</option>
+                        <option value="#">Chương 1013</option>
+                        <option value="#">Chương 1012</option>
+                        <option value="#">Chương 1011</option>
+                        <option value="#">Chương 1010</option>
+                        <option value="#">Chương 1009</option>
+                        <option value="#">Chương 1008</option>
+                        <option value="#">Chương 1007</option>
+                        <option value="#">Chương 1006</option>
+                        <option value="#">Chương 1005</option>
+                        <option value="#">Chương 1004</option>
+                        <option value="#">Chương 1003</option>
+                        <option value="#">Chương 1002</option>
+                        <option value="#">Chương 1001</option>
+                        <option value="#">Chương 1000</option>
+                        <option value="#">Chương 999</option>
+                        <option value="#">Chương 998</option>
+                        <option value="#">Chương 997</option>
+                    </select>
+                    <span class="mobile-delete">&emsp;</span>
+                    <a href="#" class="move-chap-foot"><i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="flex3-foot-onechap">
+                    <a href="#" id="theodoi-onechap-foot"> <i class="far fa-heart"></i> &nbsp;<span class="pc-text-foot">Theo dõi</span></a>
+                </div>
             </p>
         </div>    
         <div>&nbsp;</div> 

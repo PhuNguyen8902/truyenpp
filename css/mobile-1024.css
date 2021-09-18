@@ -256,7 +256,7 @@
     #bttop
     {
         right: 3%;
-        bottom: 6%;
+        bottom: 10%;
         width: 7%;
         height: 5%;
     }
@@ -308,6 +308,18 @@
        margin-left: 10%;
        font-size: 110%;
     }
+    .flex1-foot-onechap
+    {
+        width: 20%;
+    }
+    .flex2-foot-onechap
+    {
+        width: 70%;
+    }
+    .flex3-foot-onechap
+    {
+        width: 10%;
+    }
 }
 
 @media screen and (orientation: landscape)
@@ -315,7 +327,7 @@
     #bttop
     {
         right: 3%;
-        bottom: 20%;
+        bottom: 30%;
         width: 7%;
         height: 10%;
     }
