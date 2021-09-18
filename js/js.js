@@ -1,4 +1,4 @@
-$(document).ready(function()
+$(document).ready(function()        // được kích hoạt khi html load xong
 {
     $("#bttop").hide()
 
@@ -26,6 +26,19 @@ $(document).ready(function()
             scrollTop: $(h).prop("offsetTop")
             },1000)
     })
+
+    $('#foot-disappear').show()
+
+    $(window).bind('mousewheel', function(event) {      // Hàm blind được xử dụng để đính kèm sự kiện với thành phần
+        if (event.originalEvent.wheelDelta >= 0) {      // Mousewheel bắt sự kiện lăn chuột
+            $("#foot-disappear").show()
+        }
+        else {
+            $("#foot-disappear").hide()
+        }
+    });
 })
+
+
 
 
