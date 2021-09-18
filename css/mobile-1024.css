@@ -256,9 +256,57 @@
     #bttop
     {
         right: 3%;
-        bottom: 3%;
+        bottom: 6%;
         width: 7%;
         height: 5%;
+    }
+    /* chap */
+    .chap-control
+    {
+        text-align: center;
+        margin-left: 10px !important;
+    }
+    #server1
+    {
+        margin-left: 40%  !important;
+    }
+    .note
+    {
+        display: none;
+    }
+    a.chaptruoc
+    {
+        margin-left: 35%;
+    }
+    .pc-text-foot
+    {
+        display: none;
+    }
+    div.foot-onechap p:first-child
+    {
+        margin-left: 5%;
+    }
+    #baoloi
+    {
+        margin-left: 2px;
+    }
+    #move-chap-foot-left
+    {
+        margin-left: 10%;
+    }
+    .select-episode
+    {
+        padding: 3px 10%;
+        font-size: 100%;
+    }
+    .move-chap-foot
+    {
+        padding: 3px 6px;
+    }
+    #theodoi-onechap-foot
+    {
+       margin-left: 10%;
+       font-size: 110%;
     }
 }
 
@@ -267,8 +315,18 @@
     #bttop
     {
         right: 3%;
-        bottom: 3%;
+        bottom: 20%;
         width: 7%;
         height: 10%;
     }
+    #move-chap-foot-left
+    {
+        margin-left: 5%;
+    }
+    .select-episode
+    {
+        padding: 3px 6%;
+        font-size: 80%;
+    }
+    /* chap */
 }

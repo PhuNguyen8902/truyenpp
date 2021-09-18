@@ -229,7 +229,7 @@
     #bttop
     {
         right: 3%;
-        bottom: 3%;
+        bottom: 12%;
         width: 13%;
         height: 5.5%;
     }
@@ -257,6 +257,54 @@
     {
         display: block;
         margin-left: 30%;
+    }
+    /* chap */
+    .chap-control
+    {
+        text-align: center;
+        margin-left: 10px !important;
+    }
+    #server1
+    {
+        margin-left: 30%  !important;
+    }
+    .note
+    {
+        display: none;
+    }
+    a.chaptruoc
+    {
+        margin-left: 15%;
+    }
+    .pc-text-foot
+    {
+        display: none;
+    }
+    div.foot-onechap p:first-child
+    {
+        margin-left: 5%;
+    }
+    #baoloi
+    {
+        margin-left: 2px;
+    }
+    #move-chap-foot-left
+    {
+        margin-left: 2px;
+    }
+    .select-episode
+    {
+        padding: 1px 6px;
+        font-size: 80%;
+    }
+    .move-chap-foot
+    {
+        padding: 3px 6px;
+    }
+    #theodoi-onechap-foot
+    {
+       margin-left: 5px;
+       font-size: 110%;
     }
     /* ----------------- */
 

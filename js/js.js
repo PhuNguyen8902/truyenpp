@@ -16,6 +16,16 @@ $(document).ready(function()
                 scrollTop: 0
             },1000);
     })
+
+    // Sắp xếp
+    $("nav ul.menu a").click(function()
+    {
+        var h= $(this).attr("href")
+
+        $("html, body").animate ({
+            scrollTop: $(h).prop("offsetTop")
+            },1000)
+    })
 })
 
 
