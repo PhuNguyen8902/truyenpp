@@ -5,10 +5,19 @@ body
     padding: 0;
     background-color: #ebebeb;
 }
+.b
+{
+    font-weight: bold;
+}
 a
 {
     text-decoration: none;
 }
+ul
+{
+    list-style-type: none;
+}
+
 @keyframes doimau
 {
     from
@@ -25,14 +34,27 @@ a
     box-sizing: border-box;         /*  Tự canh lề cho các flex*/
     font-family: Arial, Helvetica, sans-serif;
 }
+/* Căn giữa cho body */
+.mid-body
+{
+    width: 80%;
+    margin:  auto;
+}
 /* header */
+.title
+{
+    width: 100%;
+    background-color: orange;
+    position: relative;
+    height: 110px;
+}
+/* logo */
 .LucidaConsole
 {
     float: left;
     display: inline;
     font-family: "Lucida Console", "Courier New", monospace;
 }
-/* logo */
 .titlepage a span:first-child
 {
     color: black;
@@ -42,19 +64,9 @@ a
 {
     color:dodgerblue;
 }
-.title
-{
-    width: 100%;
-    background-color: orange;
-}
-.b
-{
-    font-weight: bold;
-}
-.right
-{
-    direction: rtl;
-}
+/*-----------End logo -----------*/
+
+/* Đăng nhập đăng kí */
 #dangnhap
 {
     background-color: #8bc34a;
@@ -63,6 +75,8 @@ a
     margin: 30px 20px;
     border-radius: 10px;
     color: white;
+    position: absolute;
+    right: 15%;
 }
 #dangky
 {
@@ -71,14 +85,17 @@ a
     margin: 30px 20px;
     border-radius: 10px;
     color: white;
+    position: absolute;
+    right: 5%;
 }
+/* --------- */
+
  /* thanh tim kiem */
 .search-box
 {
     position: absolute;
-    top: 6%;
-    left: 47%;
-    transform: translate(-50%,-50%);
+    left: 40%;
+    top: 3%;
     background-color: #2f3640;
     height: 35px;
     border-radius: 40px;
@@ -91,8 +108,6 @@ a
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    justify-content: center;
-    align-items: center;
 }
 .search-txt
 {
@@ -105,31 +120,29 @@ a
     font-size: 16px;
     transition: 0.4s;
 }
+/* ------------ */
+/* -----End header-------- */
+
 /* thanh menu */
-div table
- {
-      float: right;
- }
+nav >ul.menu
+{
+    display: flex;
+}
+ul.menu
+{
+    background: lightblue;
+    padding: 0;
+    margin: 0;
+}
 ul.menu >li >a
 {
     display: block;
     padding: 20px;
     color: black;
 }
-ul.menu
-{
-    background: lightblue;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-nav >ul.menu
-{
-    display: flex;
-}
 ul.menu >li
 {
-    max-width: 200px;
+    max-width: 200px;       /* Khoảng cách các ô trong menu*/
     z-index: 200;
 }
 ul.menu >li >a:hover
@@ -138,6 +151,7 @@ ul.menu >li >a:hover
     color:red;
     transition: 0.3s;
 }
+/* Thể loại */
 .menu-theloai
 {
     width: 90%;
@@ -149,6 +163,23 @@ div.theloai img
     right: 0;
     top: 20%;
     width: 15%;
+}
+div.colum-theloaimenu
+{
+    float: left;
+}
+.theloaimenu h2
+{
+    font-size: 100%;
+}
+.theloaimenu h2 a
+{
+    color: black;
+}
+.theloaimenu h2 a:hover
+{
+    color: red;
+    transition: 0.3s;
 }
 /* sap xep */
 div.menu-pointer
@@ -174,28 +205,30 @@ div.menu-pointer:hover
     display: block;
     position: absolute;
 }
+
+/* End thể loại */
 ul.subcontent >li >a:hover
 {
-    background: white !important;
+    background: white !important;       /* Cho ô sắp xếp*/
 }
+/* End menu */
+
 /* body */
+div.items
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item
+{
+    text-align: center;
+}
 div.item
 {
     padding: 5px;
     width: 15%;
     margin: 0.8%;
     position: relative;
-}
-/* HOT */
-div.lable
-{
-    position: absolute;
-    top: 2%;
-    right: 3%;
-    padding: 5px;
-    color: white;
-    border-radius: 10px ;
-    animation: doimau 0.5s infinite;
 }
 div.item img
 {
@@ -293,14 +326,20 @@ div.more-info
     color: #f18121;
     transition: 0.5s;
 }
-/* sắp xếp các truyện */
-div.items
+/* ------End moreinfo-------- */
+/* HOT */
+div.lable
 {
-    display: flex;
-    flex-wrap: wrap;
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    padding: 5px;
+    color: white;
+    border-radius: 10px ;
+    animation: doimau 0.5s infinite;
 }
-/* Tự tính khoảng cách các ô trên dòng */
-.titlebody
+/* Tiêu đề từng mục*/
+.titlebody          
 {
     color:mediumslateblue;
    font-size: 120%;
@@ -310,10 +349,8 @@ div.items
     color: red;
     transition: all 0.3s;
 }
-.item
-{
-    text-align: center;
-}
+/* ----------- */
+/* Tên truyện */
 .titlestory
 {
     color: black;
@@ -323,11 +360,13 @@ div.items
     color: red;
     transition: 0.5s;
 }
+/* ------------ */
+/* Xem thêm */
 a.xemthem
 {
     margin-left: 40%;
     background-color: #f18121;
-    font-size: 150%;
+    font-size: 130%;
     padding:10px 20px;
     border-radius:5px;
     color: white;
@@ -337,7 +376,20 @@ a.xemthem
     background-color: lightsalmon;
     transition: 0.3s;
 }
-div#foot
+/* ---------- */
+/* End body trang chủ */
+div.reset
+{
+    clear: left;
+   padding: 1.5%;
+}
+div.reset a
+{
+    color: black !important;
+    font-size: 110%;
+    margin-left: 5%;
+}
+#foot
 {
    
     background-color: white !important;
@@ -358,62 +410,12 @@ div.footimg
    right: 10%;
     top: 25%;
 }
+/* End trang chủ */
 
-div.reset
-{
-    clear: left;
-   padding: 1.5%;
-}
-div.reset a
-{
-    color: black !important;
-    font-size: 110%;
-    margin-left: 5%;
-}
-#theloai-index
-{
-    display: none;
-}
+/* Truyện hot */
 .bodytheloai
 {
     background-color: white;
-}
-.bodytheloai h1
-{
-    padding-top: 10px;
-    margin-top: 0;
-    font-size: 150%;
-}
-div.theloai
-{
-    width: 48%;
-    margin: 0.1%;
-    background-color: white;
-}
-.theloai:hover #theloai-index
-{
-    display: block;
-}
-ul.theloaimenu
-{
-    list-style-type: none;
-}
-div.colum-theloaimenu
-{
-    float: left;
-}
-.theloaimenu h2
-{
-    font-size: 100%;
-}
-.theloaimenu h2 a
-{
-    color: black;
-}
-.theloaimenu h2 a:hover
-{
-    color: red;
-    transition: 0.3s;
 }
 ul.theloaimenu p
 {
@@ -470,6 +472,9 @@ a.page-now
     border-radius: 20px;
     color: white;
 }
+/* -----End truyện hot---- */
+
+/* One piece */
 div.bodyoneanime img
 {
     float: left;
@@ -563,7 +568,6 @@ div.button-oneanime a
 }
 ul.dschuong li
 {
-    list-style-type: none;
     font-size: 100%;
     padding: 0.7%;
 }
@@ -576,7 +580,8 @@ div > ul.dschuong
 }
 ul.dschuong li:last-child
 {
-    margin-left: 80%;
+    position: absolute;
+    right: 2px;
 }
 div.dschuongs
 {
@@ -585,6 +590,7 @@ div.dschuongs
     overflow: auto;
     margin-left: 10%;
     border-radius: 10px;
+    position: relative;
 }
 a.xemthemofdschuong
 {
@@ -600,7 +606,7 @@ a.xemthemofdschuong:hover
     background-color: lightsalmon;
     transition: 0.3s;
 }
-
+/* -------End onepiece-------- */
 /* go to top */
 #bttop
 {
@@ -620,7 +626,6 @@ a.xemthemofdschuong:hover
     font-size: 200%;
     margin-left:33% ;
     margin-top:5% ;
-    justify-content: center;
 }
 #bttop:hover
 {
@@ -649,12 +654,6 @@ div.comment-input textarea
     top: 30%;
     color: #f18121;
     font-size: 30px;
-}
-/* Căn giữa cho body */
-.mid-body
-{
-    width: 80%;
-    margin:  auto;
 }
 /* Chap */
 .background-chap
@@ -823,6 +822,17 @@ img
     width: 20%;
 }
 /* mobile */
+@keyframes fadeIn 
+{
+    from
+    {
+        opacity: 0;
+    }    
+    to
+    {
+        opacity: 1;
+    }
+}
 #mobile-header
 {
     display: none;
@@ -837,7 +847,7 @@ img
     background-color: rgba(0, 0, 0, 0.3);
     display: none;
     animation: fadeIn linear 0.2s;
-    z-index: 99;
+    z-index: 1000;
 }
 #mobile-menu
 {
@@ -851,7 +861,7 @@ img
     transform: translateX(-100%);
     opacity: 0;
     transition: all linear 0.2s;
-    z-index: 999;
+    z-index: 1001;
 }
 .mobile-menu-list
 {
@@ -873,17 +883,7 @@ img
     top: 8px;
     right: 15px;
 }
-@keyframes fadeIn 
-{
-    from
-    {
-        opacity: 0;
-    }    
-    to
-    {
-        opacity: 1;
-    }
-}
+
 div.mobile-header-truyenhot
 {
     display: none;
