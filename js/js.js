@@ -9,6 +9,8 @@ $(document).ready(function()        // được kích hoạt khi html load xong
         else
             $("#bttop").hide("slow")
     })
+
+    // go to top
     $('#bttop').click(function()
     {
         $('html, body').animate(
@@ -29,8 +31,8 @@ $(document).ready(function()        // được kích hoạt khi html load xong
 
     $('#foot-disappear').show()
 
-    $(window).bind('mousewheel', function(event) {      // Hàm blind được xử dụng để đính kèm sự kiện với thành phần
-        if (event.originalEvent.wheelDelta >= 0) {      // Mousewheel bắt sự kiện lăn chuột
+    $(window).bind('mousewheel', function(E) {      // Hàm bind được xử dụng để đính kèm sự kiện với thành phần
+        if (E.originalEvent.wheelDelta >= 0) {      // Mousewheel bắt sự kiện lăn chuột
             $("#foot-disappear").show()
         }
         else {
